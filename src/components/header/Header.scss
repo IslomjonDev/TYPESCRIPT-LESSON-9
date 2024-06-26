@@ -1,0 +1,106 @@
+.header{
+    background: linear-gradient(155.28deg, #383638 2.06%, #0B0B0B 33.08%);
+    padding: 23px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nav__logo{
+            display: flex;
+            align-items: center;
+            svg{
+                width: 27px;
+                height: 27px;
+            }
+            p{
+                font-family: Poppins;
+                font-weight: 500;
+                line-height: 24px;
+                color: #fff;
+            }
+        }
+        .nav__list{
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 27px;
+                li a{
+                    color: #8B8E99;
+                }
+            }
+        }
+        .nav__icons{
+            display: flex;
+            gap: 15px;
+            svg{
+                color: #fff;
+                width: 20.62px;
+                height: 23px;
+                align-items: center;
+                cursor: pointer;
+            }
+            .user__icon{
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    .nav__burger{
+        display: none;
+    }
+}
+
+
+@media (max-width:600px) {
+    .nav__list {
+        display: none !important;
+    }
+    .nav__burger{
+        display: block !important;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        svg{
+            color: #FFFFFF !important;
+            font-size: 26px !important;
+        }
+    }
+    .nav__list{
+        display: flex !important;
+        transition:  .3s ease-in-out;
+        width: 300px;
+        height: 100vh;
+        border-radius: 0 12px 12px 0;
+        background: linear-gradient(155.28deg, #383638 2.06%, #0B0B0B 33.08%);
+        position: absolute;
+        scale: 1;
+        padding: 40px 30px;
+        top: 66px;
+        left: 0;
+        ul{
+            flex-direction: column !important;
+        }
+    }
+    .nav__list.show{
+        display: flex !important;
+        width: 300px;
+        height: 100vh;
+        border-radius: 0 12px 12px 0;
+        background-color: #FFFFFF;
+        position: absolute;
+        scale: 1;
+        padding: 40px 30px;
+        top: 70px;
+        left: 0;
+        ul{
+            flex-direction: column !important;
+        }
+    }
+    .nav__list{
+        scale: 0;
+        position: absolute;
+    }
+}

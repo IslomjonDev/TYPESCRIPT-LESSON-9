@@ -1,0 +1,83 @@
+.banner{
+    padding: 200px 0;
+    background: linear-gradient(155.28deg, #383638 2.06%, #0B0B0B 33.08%);
+    .banner__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .banner__left{
+            h1{
+                font-family: Poppins;
+                font-size: 64px;
+                font-weight: 700;
+                line-height: 80.32px;
+                text-align: left;
+                max-width: 457px;
+                color: #fff;
+            }
+            p{
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20.08px;
+                text-align: left;
+                max-width: 456px;
+                color: #8B8E99;
+                margin: 45px 0;
+
+            }
+            .left__inp{
+                max-width: 443px;
+                background-color: #fff;
+                display: flex;
+                border-radius: 16px;
+                align-items: center;
+                gap: 8px 10px;
+                padding: 10px;
+                input{
+                    font-size: 16px;
+                    border: none;
+                    outline: none;
+                }
+                svg{
+                    color:  #3858D6;
+                    font-size: 22px;
+                }
+                button{
+                    width: 112px;
+                    height: 45px;
+                    background: #3858D6;
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff; 
+                    border: 1px solid #3858D6;   
+                    border-radius: 10px;
+                    margin-left: 60px; 
+                }
+            }
+        }
+        .banner__right{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:960px) {
+    .banner__content{
+        flex-direction: column;
+        gap:100px;
+    }
+}
+@media (max-width:600px) {
+  .banner__left{
+    h1{
+        font-size: 48px !important;
+    }
+    button{
+        margin-left: 0 !important;
+    }
+  }
+}

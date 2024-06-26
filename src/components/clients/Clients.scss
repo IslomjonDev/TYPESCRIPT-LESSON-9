@@ -1,0 +1,45 @@
+.clents{
+    margin-top: 800px;
+    margin-bottom: 50px;
+    .cleints__title{
+        text-align: center;
+        p{
+            color: #3858D6;
+        }
+        h2{
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 43.57px;
+            margin: 5px 0 55px 0;
+        }
+    }
+    .clients__card{
+        padding: 30px;
+        max-width: 524px;
+        height: 239px;
+        border-radius: 22px;
+        display: flex;
+        gap: 28px;
+        background: #F6F6F6;
+        align-items: center;
+        p{
+            width: 255px;
+            font-family: Poppins;
+            font-weight: 500;
+            line-height: 19.36px;
+            color: #8B8E99;
+            margin: 10px  0;
+        }
+        
+    }
+}
+
+
+@media (max-width:800px) {
+    .clients__card{
+        p , h2 , .stars{
+            display: none;
+        }
+    }
+}

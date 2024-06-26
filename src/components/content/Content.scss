@@ -1,0 +1,48 @@
+.content__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 80px 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 50px;
+    .product__item{
+        display: flex;
+        transition: .3s;
+        width: 354px;
+        height: 239px;
+        border-radius: 22px;    
+        background: #F6F6F6;
+        justify-content: center;
+        align-items: center;
+        padding: 45px;
+        gap: 26px;
+        img{
+            width: 85px;
+            height: 148px;
+            
+        }
+        p{
+            font-family: Poppins;
+            color: #8B8E99;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.36px;
+            text-align: left;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+        span{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    .product__item:hover{
+            transform: scale(1.03);
+    }
+}
