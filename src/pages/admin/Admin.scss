@@ -1,0 +1,51 @@
+.admin{
+    padding: 150px 0;
+    h1{
+        margin: 50px 0;
+    }
+    .users__title{
+        display: flex;
+        gap: 200px;
+        span{
+            display: flex;
+            gap: 20px;
+            width: 200px;
+        }
+        .w100{
+            width: 120px;
+        }
+    }
+    .user__item{
+        border: 1px solid black;
+        margin: 20px 0;
+        align-items: center;
+        padding: 15px;
+        border-radius: 6px;
+        display: flex;
+        gap: 200px;
+        button{
+            padding: 10px 30px;
+            border-radius: 6px;
+            border: 1px solid red;
+            background-color: red;
+            color: #FFF;
+        }
+        h1{
+            margin: 0;
+            font-size: 18px;
+
+        }
+        h3{
+            width: 100px !important;
+        }
+        p{
+            width: 100px;
+        }
+        span{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 200px;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.login{
+    background: linear-gradient(155.28deg, #383638 2.06%, #0B0B0B 33.08%);
+    padding: 160px 0;
+    .login__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .login__right{
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                span{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                h2{
+                    color: #FFFFFF;
+                }
+                label{
+                    color: #FFFFFF;
+                }
+                input{
+                    width: 400px;
+                    padding: 15px;
+                    outline: none;
+                    background-color: black;
+                    border: none;
+                    border-bottom: 1px solid #FFFFFF;
+                    color: #FFFFFF;
+                }
+                button{
+                    background-color: black;
+                    color: #FFFFFF;
+                    border: 1px solid #FFFFFF;
+                    padding: 15px;
+                    border-radius: 6px;
+                    transition: .3s;
+                }
+                button:hover{
+                    background-color: #FFFFFF;
+                    color: black;
+                    border: 1px solid black;
+                    padding: 15px;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+}

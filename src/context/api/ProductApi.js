@@ -15,20 +15,27 @@ export const productApi = api.injectEndpoints({
       }),
       providesTags:["Product"]
     }),
-    createProduct: build.mutation({
+    getUsers: build.query({
+      query: (params) => ({ 
+        url: `/users/search`,
+        params
+      }),
+      providesTags:["Product"]
+    }),
+    SignIn: build.mutation({
       query: (body)=> ({
-        url:"/products",
+        url:"/auth/sign-in",
         method: "POST",
         body
       }),
-      invalidatesTags: ["Product"]
+      invalidatesTags: ["User"]
     }),
-    deleteProduct: build.mutation({
+    deleteUsers: build.mutation({
       query: (id)=> ({
-        url:`/products/${id}`,
+        url:`/users/${id}`,
         method: "DELETE"
       }),
-      invalidatesTags: ["Product"]
+      invalidatesTags: ["User"]
     }),
     updateProduct: build.mutation({
       query: ({id, body})=> ({
@@ -43,7 +50,8 @@ export const productApi = api.injectEndpoints({
 
 export const {
   useGetProductsQuery,
-  useCreateProductMutation,
-  useDeleteProductMutation,
+  useGetUsersQuery,
+  useSignInMutation,
+  useDeleteUsersMutation,
   useUpdateProductMutation
 } = productApi

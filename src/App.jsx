@@ -1,22 +1,25 @@
+import { Route, Routes } from 'react-router'
 import './App.css'
-import Banner from './components/banner/Banner'
-import Clients from './components/clients/Clients'
-import Content from './components/content/Content'
+
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
-import Products from './components/products/Products'
-import Register from './components/register/Register'
+import Home from './pages/home/Home'
+import Login from './pages/login/Login'
+import Admin from './pages/admin/Admin'
+import Auth from './pages/auth/Auth'
 
 function App() {
 
   return (
     <>
       <Header/>
-       <Banner />
-       <Content/>
-       <Products/>
-       <Clients/>
-       <Register/>
+      <Routes>
+         <Route path='/' element={<Home/>}/>
+         <Route path='/login' element={<Login/>}/>
+         <Route path='/' element={<Auth/>}>
+            <Route path='admin' element={<Admin/>}/>
+         </Route>
+      </Routes>
        <Footer/>
     </>
   )
