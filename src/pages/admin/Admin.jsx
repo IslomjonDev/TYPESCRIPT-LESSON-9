@@ -23,7 +23,7 @@ const Admin = () => {
                 <h3>{user.LastName}</h3>
                 <p>{user.phones[0]}</p>
                 {
-                  role?.role === "admin" ? 
+                  role?.role === "owner" ? 
                    <button onClick={() => handleDeleteUser(user)} >Delete</button> : 
                    <></>
                 }
